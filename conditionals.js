@@ -1,7 +1,7 @@
 const raining = true;
 const cold = false;
 
-if (raining)) {
+if (raining) {
   console.log("Don't forget your umbrella!");
 }
 
