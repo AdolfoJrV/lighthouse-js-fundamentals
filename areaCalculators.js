@@ -1,14 +1,14 @@
 function calculateRectangleArea(length, width) {
   let area = length * width;
-  return (length < 0 || width < 0) ? area = undefined : area; 
+  return (length < 0 || width < 0) ? undefined : area; 
 }
 function calculateTriangleArea(base, height) {
   let area = 0.5 * base * height;
-  return (base < 0 || height < 0) ? area = undefined : area;
+  return (base < 0 || height < 0) ? undefined : area;
 }
 function calculateCircleArea(radius) {
   let area = Math.PI * Math.pow(radius, 2) ; // ** exponent leads to "Parsing error: Unexpected token *" this is dependent on the ESLint being used.
-  return (radius < 0) ? area = undefined : area;
+  return (radius < 0) ? undefined : area;
 }
 
 console.log(calculateRectangleArea(10, 5));     // should print 50
