@@ -3,7 +3,7 @@ const moves = ['north', 'north', 'west', 'west', 'north', 'east', 'north']
 const finalPosition = function (moves) {
   let xCoordinate = 0;
   let yCoordinate = 0;
-  let finalCoordinates = [xCoordinate, yCoordinate];
+  let finalCoordinates = [0, 0];
 
   for (let move of moves) {
     switch (move) {
@@ -20,9 +20,9 @@ const finalPosition = function (moves) {
         xCoordinate -= 1;
         break;
     }
-    finalCoordinates[0] = xCoordinate;
-    finalCoordinates[1] = yCoordinate;
   }
+  finalCoordinates[0] = xCoordinate;
+  finalCoordinates[1] = yCoordinate;
   return finalCoordinates;
 }
 
