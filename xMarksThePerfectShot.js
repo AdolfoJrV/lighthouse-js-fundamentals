@@ -29,7 +29,7 @@ const finalPosition = function (moves) {
 // const finalPosition = function (moves) {
 //   let xCoordinate = 0;
 //   let yCoordinate = 0;
-//   let finalCoordinates = [0, 0];
+//   let finalCoordinates = [];
 
 //   for (let move of moves) {
 //     if (move === 'north') {
